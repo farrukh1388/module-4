@@ -1,0 +1,17 @@
+###
+GET https://sports.api.decathlon.com/sports
+
+###
+GET http://localhost:8080/api/v1/sports
+
+###
+DELETE http://localhost:8080/api/v1/sports/257
+
+###
+GET http://localhost:8080/api/v2/sports/257
+
+###
+GET http://localhost:8080/api/v2/sports/name/Running
+
+###
+POST http://localhost:8080/api/v2/sports/name/Running

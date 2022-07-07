@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://user:password@localhost:27017/mydb
+
+web-client:
+  baseUrl: https://sports.api.decathlon.com
