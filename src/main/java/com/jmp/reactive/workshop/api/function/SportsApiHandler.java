@@ -9,9 +9,9 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import org.springframework.web.server.ServerWebInputException;
 import reactor.core.publisher.Mono;
 
+import java.security.SecureRandom;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Random;
 import java.util.function.Predicate;
 
 @Component
@@ -19,7 +19,7 @@ import java.util.function.Predicate;
 public class SportsApiHandler {
 
     private final SportsRepository repository;
-    private final Random random = new Random();
+    private final SecureRandom random = new SecureRandom();
 
     public Mono<ServerResponse> getById(ServerRequest request) {
         var id =
